@@ -1,0 +1,59 @@
+#app{
+    width: 1140px;
+    margin: auto auto;
+}
+.bg-purple-dark {
+    background: #e5e9f2;
+}
+.dx-edit-pd{
+    padding: 14px;
+}
+.grid-content {
+    border-radius: 4px;
+}
+.grid-content-right{
+    text-align: right;
+}
+.bg-purple{
+    border: 1px solid #e5e9f2;
+    min-height: 300px;
+}
+.dx-edit-head{
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 40px;
+    line-height: 40px;
+    background: #e5e9f2;
+}
+.dx-edit-head span{
+    margin-right: 10px;
+    float: left;
+}
+.dx-widget-all{
+    border-radius: 5px;
+    border: 1px solid #e5e9f2;
+    min-height: 800px;
+    display: -webkit-flex; /* Safari */
+}
+.dx-widget-father{
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    width: 100%;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+.dx-widget-sun-one{
+    flex-direction: column;
+    flex: 4;
+    background: #e5e9f2;
+}
+.dx-widget-sun-two{
+    flex-direction: column;
+    flex: 1;
+    background: pink;
+}
+.dx-widget-sun-three{
+    flex-direction: column;
+    flex: 1;
+    background: black;
+}

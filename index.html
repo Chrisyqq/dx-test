@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>first example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-default/index.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- 先引入 Vue -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</head>
+
+<body>
+<div id="app">
+    <el-row>
+        <el-col :span="24">
+            <div class="grid-content dx-edit-pd bg-purple-dark">
+                <el-breadcrumb separator="/">
+                    <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
+                    <el-breadcrumb-item>场景设置</el-breadcrumb-item>
+                </el-breadcrumb>
+            </div>
+        </el-col>
+        <el-col :span="24">
+            <div class="grid-content dx-edit-pd grid-content-right">
+                <el-button size="small">保存</el-button>
+                <el-button type="primary" size="small">保存并发布</el-button>
+            </div>
+        </el-col>
+    </el-row>
+    <el-row>
+        <el-col :span="24">
+            <div class="dx-widget-all">
+                <!--<div class="dx-widget-father" v-for="item in widget">-->
+                    <!--<div class="dx-widget-sun" v-bind:style="{ background: item.color,height: item.height+'px',width: item.width +'%' }">-->
+                        <!--{{item.height}}-->
+                    <!--</div>-->
+                <!--</div>-->
+                <div class="dx-widget-father">
+                    <div class="dx-widget-sun-one">
+
+                    </div>
+                    <div class="dx-widget-sun-two">
+
+                    </div>
+                    <div class="dx-widget-sun-three">
+
+                    </div>
+                </div>
+
+            </div>
+        </el-col>
+    </el-row>
+    <!--<el-row :gutter="20">-->
+        <!--<el-col :span="16">-->
+            <!--<div class="grid-content bg-purple">-->
+                <!--<div class="dx-edit-head"><span>账单分析</span><el-button type="success" size="small">修改名称与编码</el-button></div>-->
+            <!--</div>-->
+        <!--</el-col>-->
+        <!--<el-col :span="8">-->
+            <!--<div class="grid-content bg-purple">-->
+                <!--<div class="dx-edit-head"><span>Widget库</span></div>-->
+            <!--</div>-->
+        <!--</el-col>-->
+    <!--</el-row>-->
+</div>
+
+</body>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue!',
+            widget: [
+                {
+                    width : '80',
+                    height : '100',
+                    singerSmall : 'false',
+                    multipleSmall : 'false',
+                    color: "green"
+                },
+                {
+                    width : '20',
+                    height : '100',
+                    singerSmall : 'false',
+                    multipleSmall : 'true',
+                    color: "pink"
+                },
+                {
+                    width : '100',
+                    height : '100',
+                    singerSmall : 'false',
+                    multipleSmall : 'true',
+                    color: "black"
+                }
+            ]
+        }
+    })
+</script>
+</html>
