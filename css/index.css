@@ -30,10 +30,10 @@
     float: left;
 }
 .dx-widget-all{
+    width: 100%;
     border-radius: 5px;
     border: 1px solid #e5e9f2;
     min-height: 800px;
-    display: -webkit-flex; /* Safari */
 }
 .dx-widget-father{
     display: flex;
@@ -56,4 +56,30 @@
     flex-direction: column;
     flex: 1;
     background: black;
+}
+.Grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+.Grid-cell {
+    flex: 1;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 10px;
+    -webkit-transition: height 0.2s ease,flex 0.2s ease; /* For Safari 3.1 to 6.0 */
+    transition: height 0.2s ease,flex 0.2s ease;
+}
+.Grid-width-none{
+    -webkit-transition: flex 0.2s ease; /* For Safari 3.1 to 6.0 */
+    transition: flex 0.2s ease;
+    flex: none !important;
+    /*width: 50px !important;*/
+}
+.Grid-height-none{
+    -webkit-transition: height 0.2s ease; /* For Safari 3.1 to 6.0 */
+    transition: height 0.2s ease;
+    height: 30px!important;
 }
